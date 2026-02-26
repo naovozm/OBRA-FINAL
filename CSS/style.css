@@ -1,0 +1,430 @@
+@media screen {}
+
+
+
+
+
+@font-face {
+  font-family: "Futura100Bold";
+  src: url(../TIPO/Futura100-Bold.otf);
+}
+
+@font-face {
+  font-family: "Futura100BoldOB";
+  src: url(../TIPO/Futura100-BoldOblique.otf);
+}
+
+@font-face {
+  font-family: "Futura100Book";
+  src: url(../TIPO/Futura100-Book.otf);
+}
+
+@font-face {
+  font-family: "Futura100REG";
+  src: url(../TIPO/Futura100-Regular.otf);
+}
+
+@font-face {
+  font-family: "NFB";
+  src: url(../TIPO/NeutralFaceBold.otf);
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+
+
+
+
+
+
+
+
+
+/* NAVBAR */
+
+.hero {
+  height: 100vh;
+  background-image: url(../IMG/Imagen\ landing\ reemplazar\ por\ GIF.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#logo {
+  width: 50px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  transform: translateX(-100%);
+  transition: background-color 0.3s ease;
+
+}
+
+#menu-toggle:checked~.navbar {
+  transform: translateX(0);
+}
+
+.navbar a {
+  font-family: "Futura100Book";
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar.scrolled {
+  background-color: rgba(9, 43, 127, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+.logoprincipal {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  height: auto;
+}
+
+
+
+
+
+
+
+/* CONTENIDO */
+
+.white-section {
+  background: white;
+  padding-top: 90px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  justify-items: center;
+}
+
+.white-section h1 {
+  font-family: "NFB";
+  letter-spacing: -2px;
+  color: #092b7f;
+  width: 100%;
+  max-width: 500px;
+
+  margin-bottom: 8px;
+  transition: ease-in 0.4s;
+}
+
+.white-section h1:hover {
+  color: #7575d0;
+  cursor: pointer;
+}
+
+.white-section p {
+  font-family: "Futura100REG";
+  color: #0b0b0b;
+  width: 100%;
+  max-width: 500px;
+
+  margin-top: 0;
+  padding-bottom: 80px;
+}
+
+#video {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.destacado {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: ease-in-out 0.4s;
+  z-index: 1;
+}
+
+.destacado:hover {
+  background-color: #7575d0;
+  opacity: 0.6;
+  z-index: 1;
+
+}
+
+.footer {
+  padding: 32px;
+  text-align: left;
+  background: linear-gradient(180deg, #092b7f, #092b7f);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  font-family: "Futura100REG";
+
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.footer-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.footer-phone {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-phone::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #7575d0;
+  transition: width 0.3s ease;
+}
+
+.footer-phone:active {
+  transform: scale(0.96);
+}
+
+.footer-phone:hover::after {
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a::before {
+  content: "→";
+  position: absolute;
+  left: -18px;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #7575d0;
+  transform: translateX(6px);
+}
+
+.footer-links a:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes carr_scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#carrusel {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 70px
+}
+
+#carrusel:hover {
+  .carr_grupo {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+}
+
+.carr_grupo {
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-right: 10px;
+  animation-name: carr_scroll;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+.carrusel_item {
+
+  position: relative;
+
+}
+
+.carrusel_item .texto {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  bottom: 10%;
+  right: 10%;
+
+  font-family: "Futura100Book";
+  color: white;
+  font-size: 10px;
+
+  min-width: 80%;
+  min-height: 40%;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+
+  /* https://developer.mozilla.org/es/docs/Web/CSS/Reference/Properties/backdrop-filter */
+  backdrop-filter: blur(2px);
+  /* backdrop-filter: brightness(60%);
+    backdrop-filter: contrast(40%);
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+    backdrop-filter: grayscale(30%);
+    backdrop-filter: hue-rotate(120deg);
+    backdrop-filter: invert(70%);
+    backdrop-filter: opacity(20%); */
+}
+
+.carr_img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+@media screen and (min-width: 1230px) {
+
+  .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background: none;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .white-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  #video {
+    grid-column: 1 / 4;
+    max-width: 100%;
+  }
+
+  h1,
+  p {
+    grid-column: 1 / 2;
+  }
+
+  #carrusel {
+    img {
+      border-radius: 30px;
+    }
+
+    p {
+      font-size: 30px;
+
+    }
+  }
+
+  .logoprincipal {
+    width: 700px;
+    top: 50%;
+  }
+
+  .destacado {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+  }
+
+  .texto {
+    grid-column: 1/4;
+  }
+}

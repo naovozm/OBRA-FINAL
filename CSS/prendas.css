@@ -1,0 +1,83 @@
+/* NAVBAR */
+
+
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#logo {
+  width: 50px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  transform: translateX(-100%);
+  transition: background-color 0.3s ease;
+
+}
+
+#menu-toggle:checked ~ .navbar {
+  transform: translateX(0);
+}
+
+.navbar a {
+  font-family: "Futura100Book";
+  color: rgb(0, 0, 177);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgb(109, 77, 255);
+}
+
+.navbar.scrolled {
+  background-color: rgba(9, 43, 127, 0.85);
+  backdrop-filter: blur(6px); 
+}
+
+.logoprincipal
+{  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%; 
+  height: auto;}
+
+
+@font-face {
+  font-family: "Futura100Bold";
+  src: url(../TIPO/Futura100-Bold.otf);
+}
+
+@font-face {
+  font-family: "Futura100BoldOB";
+  src: url(../TIPO/Futura100-BoldOblique.otf);
+}
+
+@font-face {
+  font-family: "Futura100Book";
+  src: url(../TIPO/Futura100-Book.otf);
+}
+
+@font-face {
+  font-family: "Futura100REG";
+  src: url(../TIPO/Futura100-Regular.otf);
+}
