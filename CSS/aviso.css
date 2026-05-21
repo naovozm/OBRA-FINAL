@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "Futura100Book";
+  src: url(../TIPO/Futura100-Book.otf);
+}
+
+@font-face {
+  font-family: "Futura100REG";
+  src: url(../TIPO/Futura100-Regular.otf);
+}
+
+@font-face {
+  font-family: "NFB";
+  src: url(../TIPO/NeutralFaceBold.otf);
+}
+@font-face {
+  font-family: "NF";
+  src: url(../TIPO/NeutralFace.otf);
+}
+
 body{
     background-color: #162d6b;
 }
@@ -22,17 +41,14 @@ main{
     margin: 50px;
     padding: 20px;
 }
-@font-face {
-  font-family: "Futura100Book";
-  src: url(../TIPO/Futura100-Book.otf);
-}
 
-@font-face {
-  font-family: "Futura100REG";
-  src: url(../TIPO/Futura100-Regular.otf);
-}
 
-@font-face {
-  font-family: "NFB";
-  src: url(../TIPO/NeutralFaceBold.otf);
+a{
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #7575d1;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-family: "NF";
 }

@@ -1,356 +1,335 @@
   @font-face {
-      font-family: "Futura100Bold";
-      src: url(../TIPO/Futura100-Bold.otf);
+    font-family: "Futura100Bold";
+    src: url(../TIPO/Futura100-Bold.otf);
   }
 
   @font-face {
-      font-family: "Futura100BoldOB";
-      src: url(../TIPO/Futura100-BoldOblique.otf);
+    font-family: "Futura100BoldOB";
+    src: url(../TIPO/Futura100-BoldOblique.otf);
   }
 
   @font-face {
-      font-family: "Futura100Book";
-      src: url(../TIPO/Futura100-Book.otf);
+    font-family: "Futura100Book";
+    src: url(../TIPO/Futura100-Book.otf);
   }
 
   @font-face {
-      font-family: "Futura100REG";
-      src: url(../TIPO/Futura100-Regular.otf);
+    font-family: "Futura100REG";
+    src: url(../TIPO/Futura100-Regular.otf);
   }
 
   @font-face {
-      font-family: "NFB";
-      src: url(../TIPO/NeutralFaceBold.otf);
+    font-family: "NFB";
+    src: url(../TIPO/NeutralFaceBold.otf);
   }
 
   body {
-      font-family: "Futura100REG";
-      background: #eee;
-      margin: 0;
-
+    font-family: "Futura100REG";
+    background: #eee;
+    margin: 0;
   }
 
   .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px;
-      z-index: 9999;
-      transition: transform 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    z-index: 9999;
+    transition: transform 0.3s ease;
   }
 
   .navbar a {
-      color: #092b7f;
-      text-decoration: none;
-      font-size: 16px;
-
+    color: #092b7f;
+    text-decoration: none;
+    font-size: 16px;
   }
 
   #toggle {
-      display: none;
-
+    display: none;
   }
 
   .logo {
-      position: fixed;
-      top: 10px;
-      left: 60px;
-      cursor: pointer;
-      z-index: 10000;
-      height: 10px;
-      width: 10px;
-      color: white;
-      padding: 5px 10px;
-
+    position: fixed;
+    top: 10px;
+    left: 60px;
+    cursor: pointer;
+    z-index: 10000;
+    height: 10px;
+    width: 10px;
+    color: white;
+    padding: 5px 10px;
   }
 
- 
-
   .logo img {
-      width: 40px;
+    width: 40px;
   }
 
   #toggle:checked~.navbar {
-      transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 
-  /* GENERAL */
   section {
-      padding: 60px 80px;
-      font-family: 'Futura100REG', Arial, sans-serif;
+    padding: 60px 80px;
+    font-family: 'Futura100REG', Arial, sans-serif;
   }
 
   h2 {
-      font-family: 'NFB', sans-serif;
-      color: #092b7f;
-      margin-bottom: 20px;
-      font-size: 28px;
+    font-family: 'NFB', sans-serif;
+    color: #092b7f;
+    margin-bottom: 20px;
+    font-size: 28px;
   }
 
   p {
-      max-width: 600px;
-      font-size: 15px;
-      color: #555;
-      line-height: 1.6;
+    max-width: 600px;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
   }
 
   .about {
-      background-color: #eee;
-      min-height: 100vh;
-      padding: 80px;
-      padding-top: 150px;
+    background-color: #eee;
+    min-height: 100vh;
+    padding: 80px;
+    padding-top: 150px;
   }
 
-  /* contenedor centrado pero contenido alineado a la izquierda */
   .about-container {
-      max-width: 1100px;
-      margin: 0 auto;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
   .about h2 {
-      font-family: 'NFB', sans-serif;
-      font-size: 48px;
-      color: #092b7f;
-      margin-bottom: 20px;
+    font-family: 'NFB', sans-serif;
+    font-size: 48px;
+    color: #092b7f;
+    margin-bottom: 20px;
   }
 
   .about p {
-      font-family: 'Futura100REG', sans-serif;
-      font-size: 16px;
-      color: #6b7c93;
-      max-width: 2300px;
-      line-height: 1.6;
-      margin-bottom: 40px;
+    font-family: 'Futura100REG', sans-serif;
+    font-size: 16px;
+    color: #6b7c93;
+    max-width: 2300px;
+    line-height: 1.6;
+    margin-bottom: 40px;
   }
 
-.about-images {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.about-images img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-}
-
-
-
-
-.buntaro {
-  background-color: #092b7f;
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
-  padding: 80px;
-}
-
-/* contenedor */
-.buntaro-container {
-  max-width: 1300px;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-
-  flex-direction: row-reverse; /* imagen izquierda, texto derecha */
-}
-
-/* texto */
-.buntaro-text {
-  text-align: right;
-  max-width: 900px; /* hace el texto más largo horizontalmente */
-}
-
-.buntaro-text h2 {
-  font-family: 'NFB', sans-serif;
-  font-size: 48px;
-  color: white;
-  margin-bottom: 20px;
-
-  max-width: 900px;
-}
-
-.buntaro-text p {
-  font-family: 'Futura100REG', sans-serif;
-  font-size: 16px;
-  color: #d6e2ff;
-  line-height: 1.6;
-
-  max-width: 900px;
-}
-
-/* imagen */
-.buntaro-img {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.buntaro-img img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
-
-#logotipo img {
-  width: 50%;
-}
-
-#logotipo {
-  position: fixed;
-  top: 10px;
-  left: 110px;
-  cursor: pointer;
-  z-index: 10000;
-  height: 40px;
-  width: 48px;
-  color: white;
-  padding: 5px 10px;
-
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  font-family: "Futura100REG";
-  border-radius: 10PX;
-  border-color: #092b7f;
-}
-.contact-form button {
-  background-color: #092b7f;
-  color: white;
-}
-/* =========================
-   RESPONSIVE MÓVIL
-========================= */
-@media (max-width: 768px) {
-
-  /* NAVBAR */
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.95);
-  }
-
-  .navbar a {
-    font-size: 14px;
-  }
-
-  /* LOGO + LOGOTIPO en vertical */
-  .logo {
-    top: 10px;
-    left: 20px;
-  }
-
-  #logotipo {
-    top: 60px;
-    left: 20px;
-  }
-
-  /* GENERAL */
-  section {
-    padding: 40px 20px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  /* ABOUT */
-  .about {
-    padding: 40px 20px;
-     margin-left: 30px;
-     margin-right: 30px;
-  }
-
-  .about h2 {
-    font-size: 38px;
-  }
-
-  .about p {
-    font-size: 18px;
-  }
-
-  /* 2 IMÁGENES EN FILA */
- .about-images {
-    padding-top:30px ;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.about-images img {
-  width: 50%;
-  max-width: none;
-  height: auto;
-}
-  /* BUNTARO (orden correcto en móvil) */
-  .buntaro {
-    padding: 40px 20px;
-  }
-
-  .buntaro-container {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-    margin-left: 30px;
-     margin-right: 30px;
-  }
-
-  .buntaro-img {
-    order: 1;
+  .about-images {
+    display: flex;
+    gap: 30px;
     justify-content: center;
   }
 
+  .about-images img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+
+
+
+
+  .buntaro {
+    background-color: #092b7f;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    padding: 80px;
+  }
+
+  .buntaro-container {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-direction: row-reverse;
+  }
+
   .buntaro-text {
-    order: 2;
-    text-align: center;
+    text-align: right;
+    max-width: 900px;
   }
 
   .buntaro-text h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-family: 'NFB', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+    max-width: 900px;
   }
 
   .buntaro-text p {
-    font-size:14px;
+    font-family: 'Futura100REG', sans-serif;
+    font-size: 16px;
+    color: #d6e2ff;
+    line-height: 1.6;
+    max-width: 900px;
+  }
+
+  .buntaro-img {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .buntaro-img img {
-    max-width: 200px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
 
-  /* ESPACIO ABAJO PARA EL FORM */
-  body {
-    padding-bottom: 80px;
-    padding-top: 60px;
+  #logotipo img {
+    width: 50%;
   }
 
-  .contact,
-  #contacto {
-    margin-bottom: 80px;
- margin-left: 30px;
-     margin-right: 30px;
+  #logotipo {
+    position: fixed;
+    top: 10px;
+    left: 110px;
+    cursor: pointer;
+    z-index: 10000;
+    height: 40px;
+    width: 48px;
+    color: white;
+    padding: 5px 10px;
   }
 
-  .contact h2{
-    font-size: 30px;
-       
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-family: "Futura100REG";
+    border-radius: 10PX;
+    border-color: #092b7f;
   }
 
-}
+  .contact-form button {
+    background-color: #092b7f;
+    color: white;
+  }
+
+
+  @media (max-width: 768px) {
+
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .navbar a {
+      font-size: 14px;
+    }
+
+    .logo {
+      top: 10px;
+      left: 20px;
+    }
+
+    #logotipo {
+      top: 60px;
+      left: 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .about {
+      padding: 40px 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .about h2 {
+      font-size: 38px;
+    }
+
+    .about p {
+      font-size: 18px;
+    }
+
+    .about-images {
+      padding-top: 30px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .about-images img {
+      width: 50%;
+      max-width: none;
+      height: auto;
+    }
+
+    .buntaro {
+      padding: 40px 20px;
+    }
+
+    .buntaro-container {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .buntaro-img {
+      order: 1;
+      justify-content: center;
+    }
+
+    .buntaro-text {
+      order: 2;
+      text-align: center;
+    }
+
+    .buntaro-text h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .buntaro-text p {
+      font-size: 14px;
+    }
+
+    .buntaro-img img {
+      max-width: 200px;
+    }
+
+    body {
+      padding-bottom: 80px;
+      padding-top: 60px;
+    }
+
+    .contact,
+    #contacto {
+      margin-bottom: 80px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .contact h2 {
+      font-size: 30px;
+
+    }
+
+  }

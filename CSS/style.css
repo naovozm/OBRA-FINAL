@@ -512,8 +512,12 @@ main {
 .oculta {
   display: none;
 }
-
-
+.gallery a{
+  text-decoration: none;
+}
+.content a{
+   text-decoration: none;
+}
 @media screen and (max-width: 768px) {
 
   .navbar {
@@ -663,6 +667,7 @@ main {
 
   .content h3 {
     font-size: 18px;
+   
   }
 
   .content p {
