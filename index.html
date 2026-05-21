@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buntaro Escalada</title>
+
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="icon" type="image/x-icon" href="/IMG/Isologo alternativo.png">
 
@@ -12,147 +13,347 @@
 
 <body>
 
+  <input type="checkbox" id="toggle">
 
-  <!-- NAVBAR -->
-  <section class="hero">
+  <label for="toggle" class="logo">
+    <img src="../IMG/MenuBtn.png">
+  </label>
 
+  <img src="/IMG/Isologo blanco.png" id="logotipo">
+  <img src="/IMG/Icono traducir blanco.png" id="traducir">
 
-    <input type="checkbox" id="menu-toggle" checked />
-    <label for="menu-toggle" class="menu-btn">
-      <img src="IMG/Isologo blanco.png" id="logo" alt="menu" />
-    </label>
+  
+  <nav class="navbar">
 
-    <nav class="navbar">
-      <a href="/HTML/prendas.html">PRENDAS</a>
-      <a href="/HTML/equipamiento.html">EQUIPAMIENTO</a>
-      <a href="#">EXCURSIONES</a>
-      <a href="#">ENTRENAR</a>
-      <a href="#">NOSOTROS</a>
-    </nav>
+    <a href="/HTML/prendas.html">
+      <span class="cast">PRENDAS</span>
+      <span class="eng">CLOTHING</span>
+    </a>
 
-    <img class="logoprincipal" src="IMG/Logotipo blanco.png">
+    <a href="/HTML/equipamiento.html">
+      <span class="cast">EQUIPAMIENTO</span>
+      <span class="eng">EQUIPMENT</span>
+    </a>
 
+    <a href="/HTML/expedicion.html">
+      <span class="cast">EXCURSIONES</span>
+      <span class="eng">EXCURSIONS</span>
+    </a>
+
+    <a href="/HTML/entrenar.html">
+      <span class="cast">ENTRENAR</span>
+      <span class="eng">TRAIN</span>
+    </a>
+
+    <a href="/HTML/nosotros.html">
+      <span class="cast">NOSOTROS</span>
+      <span class="eng">ABOUT US</span>
+    </a>
+
+  </nav>
+
+  <main>
+
+    <video autoplay muted loop playsinline class="bg-video" id="bgVideo">
+  <source id="videoSource" src="/IMG/IntroFondoINDEX.mp4" type="video/mp4">
+</video>
+
+  </main>
+
+  
+  <section class="text">
+
+    <div>
+
+      <h1 class="cast">
+        Bienvenidos, aventureros
+      </h1>
+
+      <h1 class="eng">
+        Welcome, adventurers
+      </h1>
+
+      <p class="cast">
+        Bienvenidos a <b>Buntarō</b>, un espacio creado para quienes viven la montaña como un reto, una pasión y una
+        forma de superarse. Aquí unimos <b>la adrenalina de la escalada, la libertad de las excursiones</b> y la
+        preparación necesaria para llevar cada aventura <b>al siguiente nivel.</b>
+
+        En Buntarō creemos que el progreso nace del equilibrio. Por eso desarrollamos nuestro <b>propio método: el
+          Sistema 3E — Entrenar, Excursiones y Equipamiento.</b> Tres pilares que trabajan juntos para ayudarte a
+        <b>mejorar tu rendimiento</b>, disfrutar de la naturaleza y contar siempre con el material adecuado. <b>Entrena.
+          Explora. Equípate.</b>
+        Bienvenido a Buntarō.
+      </p>
+
+      <p class="eng">
+        Welcome to <b>Buntarō</b>, a space created for those who see the mountains as a challenge, a passion, and a way
+        to push themselves further. Here we combine <b>the adrenaline of climbing, the freedom of excursions</b> and the
+        preparation needed to take every adventure <b>to the next level.</b>
+
+        At Buntarō we believe progress comes from balance. That’s why we developed our <b>own method: the 3E System —
+          Training, Excursions and Equipment.</b> Three pillars working together to help you <b>improve your
+          performance</b>, enjoy nature, and always have the right gear with you. <b>Train. Explore. Equip yourself.</b>
+        Welcome to Buntarō.
+      </p>
+
+    </div>
 
   </section>
 
+ 
+  <div class="gallerytexto">
 
+    <h2 class="cast">
+      Destacados semanales
+    </h2>
 
+    <h2 class="eng">
+      Weekly highlights
+    </h2>
 
-  <!-- CONTENIDO -->
+  </div>
 
-  <article>
+  
+  <section class="gallery">
 
+    <div class="img img1">
 
-    <section class="white-section">
-      <h1>¡hola, aventureros!</h1>
-      <p>Organizamos <b>excursiones</b> de escalada para todos los niveles, ofrecemos <b>entrenamientos</b>
-        personalizados
-        para que mejores de verdad y contamos con <b>equipamiento especializado</b> seleccionado por profesionales.
-        Escalada, formación y material en un mismo lugar.
-        Supera tus límites. Nosotros te acompañamos.</p>
-      <img src="IMG/Amigos escalando.jpg" alt="" id="video">
+      <div class="overlay">
+        <p class="cast">TARIFAS</p>
+        <p class="eng">PRICES</p>
+      </div>
 
-      <article class="texto">
-        <h1>Destacados</h1>
-        <p>En esta sección reunimos lo más top del momento: experiencias, entrenamientos y novedades que no te puedes
-          perder. Es el lugar donde encuentras nuestras propuestas más potentes y lo que más está marcando la temporada.
+    </div>
+
+    <div class="img img2">
+
+      <div class="overlay">
+        <p class="cast">OFERTAS</p>
+        <p class="eng">OFFERS</p>
+      </div>
+
+    </div>
+
+    <div class="img img3">
+
+      <div class="overlay">
+        <p class="cast">NOVEDADES</p>
+        <p class="eng">NEW ARRIVALS</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  
+  <div class="destacado">
+
+    <h2 class="cast">SERVICIOS</h2>
+    <h2 class="eng">SERVICES</h2>
+
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <div class="card-image">
+        <img src="IMG/CardPrenda.jpg" alt="">
+      </div>
+
+      <div class="content">
+
+        <h3>
+          <span class="cast">Prendas</span>
+          <span class="eng">Clothing</span>
+        </h3>
+
+        <p>
+          <span class="cast">Descubre ropa diseñada para cada aventura.</span>
+          <span class="eng">Discover clothing designed for every adventure.</span>
         </p>
-      </article>
 
-      <article>
-        <img src="IMG/BUS STOP MOCKUP BUNTARO.jpg" alt="" class="destacado">
-        <h1>Nueva colección</h1>
-        <p>Descubre los viajes de escalada que hemos preparado para 2026: destinos seleccionados, rutas adaptadas a
-          distintos niveles y experiencias guiadas para que solo te preocupes de escalar y disfrutar. Naturaleza,
-          técnica y comunidad en cada salida.</p>
-      </article>
+        <button class="btn">
+          <a href="/HTML/prendas.html">
+          <span class="cast">VER</span>
+          <span class="eng">VIEW</span>
+          </a>
+        </button>
 
-      <article>
-        <img src="IMG/BILLBOARD MOCKUP BUNTARO.jpg" alt="" class="destacado">
-        <h1>Entrena con nosotros</h1>
-        <p>Nuestros programas de entrenamiento están diseñados para que progreses de forma real y segura. Planes
-          personalizados, sesiones técnicas y preparación física específica para que notes la mejora tanto en rocódromo
-          como en roca</p>
-      </article>
-
-
-      <article>
-        <img src="IMG/Expedicion1.jpg" alt="" class="destacado">
-        <h1>Expediciones este 2026</h1>
-        <p>Descubre los viajes de escalada que hemos preparado para 2026: destinos seleccionados, rutas adaptadas a
-          distintos niveles y experiencias guiadas para que solo te preocupes de escalar y disfrutar. Naturaleza,
-          técnica y comunidad en cada salida.</p>
-      </article>
-
-
-
-    </section>
-
-
-
-    <section id="carrusel">
-      <div class="carr_grupo">
-        <div class="carrusel_item">
-          <img src="IMG/Expedicion1.jpg" class="carr_img">
-          <p class="texto">EN FAMILIA</p>
-        </div>
-        <div class="carrusel_item">
-          <img src="IMG/Expedicion2.jpg" class="carr_img">
-          <p class="texto">SOLO CLIMB</p>
-        </div>
-        <div class="carrusel_item">
-          <img src="IMG/Escalada.jpg" class="carr_img">
-          <p class="texto">EN PAREJA</p>
-        </div>
-        <div class="carrusel_item">
-          <img src="IMG/Niños escalando.jpg" class="carr_img">
-          <p class="texto">EN GRUPO</p>
-        </div>
       </div>
 
-      <div class="carr_grupo">
-        <div class="carrusel_item">
-          <img src="IMG/Amigos escalando.jpg" class="carr_img">
-          <p class="texto">EXPERIENCIA</p>
-        </div>
-        <div class="carrusel_item">
-          <img src="IMG/Montaña nevada.jpg" class="carr_img">
-          <p class="texto">ENTRENAR</p>
-        </div>
-        <div class="carrusel_item">
-          <img src="IMG/Escalada2.jpg" class="carr_img">
-          <p class="texto">EQUIPAR</p>
-        </div>
-        <div class="carrusel_item">
-          <img src="IMG/Escalada.jpg" class="carr_img">
-          <p class="texto">PRENDAS</p>
-        </div>
+    </div>
+
+    
+    <div class="card">
+
+      <div class="card-image">
+        <img src="IMG/CardEquipamiento.jpg" alt="">
       </div>
-    </section>
 
-    <footer class="footer">
-      <div class="footer-content">
+      <div class="content">
 
-        <h2 class="footer-title">BUNTARO</h2>
+        <h3>
+          <span class="cast">Equipamiento</span>
+          <span class="eng">Equipment</span>
+        </h3>
 
-        <a href="tel:+34600000000" class="footer-phone">
-          +34 600 000 000<br>
-          Calle Azucena 23, 03001 (Alicante)
+        <p>
+          <span class="cast">Todo lo necesario para tus próximas rutas.</span>
+          <span class="eng">Everything you need for your next routes.</span>
+        </p>
+
+        <button class="btn">
+            <a href="/HTML/equipamiento.html">
+          <span class="cast">VER</span>
+          <span class="eng">VIEW</span>
+          </a>
+        </button>
+
+      </div>
+
+    </div>
+
+    
+    <div class="card">
+
+      <div class="card-image">
+        <img src="IMG/CardEntrena.jpg" alt="">
+      </div>
+
+      <div class="content">
+
+        <h3>
+          <span class="cast">Entrena</span>
+          <span class="eng">Train</span>
+        </h3>
+
+        <p>
+          <span class="cast">Supera tus límites con nuevas experiencias.</span>
+          <span class="eng">Push your limits with new experiences.</span>
+        </p>
+
+        <button class="btn">
+          <a href="/HTML/entrenar.html">
+          <span class="cast">VER</span>
+          <span class="eng">VIEW</span>
+          </a>
+        </button>
+
+      </div>
+
+    </div>
+
+    
+    <div class="card">
+
+      <div class="card-image">
+        <img src="IMG/CardExcursiones.jpg" alt="">
+      </div>
+
+      <div class="content">
+
+        <h3>
+          <span class="cast">Excursiones</span>
+          <span class="eng">Excursions</span>
+        </h3>
+
+        <p>
+          <span class="cast">Explora lugares únicos y crea recuerdos.</span>
+          <span class="eng">Explore unique places and create memories.</span>
+        </p>
+
+        <button class="btn">
+          <a href="/HTML/expedicion.html">
+          <span class="cast">VER</span>
+          <span class="eng">VIEW</span>
+          </a>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+ 
+  <div class="destacado">
+
+    <h2 class="cast">
+      Promoción temporada 2026
+    </h2>
+
+    <h2 class="eng">
+      2026 season promotion
+    </h2>
+
+  </div>
+
+<section class="video-promo">
+
+  <video controls class="controlpromovideo">
+    <source src="/IMG/Animatica.mp4" type="video/mp4">
+  </video>
+
+</section>
+
+  <footer class="pie">
+
+    <div class="pie-content">
+
+      <h2 class="pie-title">BUNTARO</h2>
+
+      <a href="Llamar" class="pie-pc">
+        +34 611 592 670<br>
+        C/Azucena 23, 03001 (Alicante)
+      </a>
+
+      <nav class="pie-links">
+
+        <a href="../index.html">
+          <span class="cast">VOLVER</span>
+          <span class="eng">BACK</span>
         </a>
 
-        <nav class="footer-links">
-          <a href="#/HTML/prendas.html">PRENDAS</a>
-          <a href="#">EQUIPAMIENTO</a>
-          <a href="#">EXCURSIONES</a>
-          <a href="#">ENTRENA</a>
-          <a href="#">CONTACTO</a>
-        </nav>
+        <a href="#/HTML/prendas.html">
+          <span class="cast">PRENDAS</span>
+          <span class="eng">CLOTHING</span>
+        </a>
 
-        <p class="footer-copy">© 2026 BUNTARO. All rights reserved.</p>
+        <a href="/HTML/equipamiento.html">
+          <span class="cast">EQUIPAMIENTO</span>
+          <span class="eng">EQUIPMENT</span>
+        </a>
 
-      </div>
-    </footer>
-      <script src="./JS/script.js"></script>
+        <a href="/HTML/expedicion.html">
+          <span class="cast">EXCURSIONES</span>
+          <span class="eng">EXCURSIONS</span>
+        </a>
+
+        <a href="/HTML/entrenar.html">
+          <span class="cast">ENTRENA</span>
+          <span class="eng">TRAINING</span>
+        </a>
+
+        <a href="/HTML/nosotros.html">
+          <span class="cast">NOSOTROS</span>
+          <span class="eng">ABOUT US</span>
+        </a>
+
+        <a href="/HTML/aviso.html">
+          <span class="cast">AVISO LEGAL Y POLÍTICA DE PRIVACIDAD</span>
+          <span class="eng">LEGAL NOTICE AND PRIVACY POLICY</span>
+        </a>
+
+      </nav>
+
+      <p class="pie-copy">© 2026 BUNTARO. All rights reserved.</p>
+
+    </div>
+
+  </footer>
+
+  <script src="./JS/script.js"></script>
+
 </body>
 
 </html>

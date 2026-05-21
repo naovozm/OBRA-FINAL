@@ -1,0 +1,38 @@
+body{
+    background-color: #162d6b;
+}
+
+h1{
+color: white;
+font-family: "NFB";
+font-size: 3rem;
+transition: ease-in 0.4s;
+}
+
+h1:hover{
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+p{
+    font-family: "Futura100Book";
+    color: white;
+}
+main{
+    width: 50%;
+    margin: 50px;
+    padding: 20px;
+}
+@font-face {
+  font-family: "Futura100Book";
+  src: url(../TIPO/Futura100-Book.otf);
+}
+
+@font-face {
+  font-family: "Futura100REG";
+  src: url(../TIPO/Futura100-Regular.otf);
+}
+
+@font-face {
+  font-family: "NFB";
+  src: url(../TIPO/NeutralFaceBold.otf);
+}

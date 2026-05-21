@@ -1,37 +1,392 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prendas</title>
-    <link rel="stylesheet" href="../CSS/prendas.css">
-    <link rel="icon" type="image/x-icon" href="../IMG/Camiseta logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUNTARО̄ Tienda Online: Prendas</title>
+  <link rel="stylesheet" href="../CSS/prendas.css">
+  <link rel="icon" type="image/x-icon" href="../IMG/Equipamiento icono.png">
+
 </head>
+
 <body>
-    
-    <section class="hero">
 
-    <input type="checkbox" id="menu-toggle" checked />
+  <input type="checkbox" id="toggle">
 
-    <label for="menu-toggle" class="menu-btn">
-      <img src="../IMG/Isologo alternativo.png" id="logo"alt="menu" />
-    </label>
 
-    <nav class="navbar">
-      <a href="#" style="color:rgb(131, 116, 232);"><b>PRENDAS</b></a>
-      <a href="#">EQUIPAMIENTO</a>
-      <a href="#">EXCURSIONES</a>
-      <a href="#">ENTRENAR</a>
-      <a href="#">NOSOTROS</a>
-    </nav>
+  <label for="toggle" class="logo"><img src="../IMG/MenuBtn.png"></label>
+  <a href="../index.html"><img src="../IMG/Isologo blanco.png" id="logotipo"></a>
 
-    <img class="logoprincipal" src="../IMG/Logotipo blanco.png">
 
+  <nav class="navbar">
+
+    <a href="/HTML/prendas.html"><b>PRENDAS</b></a>
+    <a href="/HTML/equipamiento.html">EQUIPAMIENTO</a>
+    <a href="/HTML/expedicion.html">EXCURSIONES</a>
+    <a href="/HTML/entrenar.html">ENTRENAR</a>
+    <a href="/HTML/nosotros.html">NOSOTROS</a>
+  </nav>
+
+  <main>
+    <picture>
+      <source srcset="../IMG/PRENDAS/FAMILIAKEPLERTLF.png" media="(max-width: 768px)">
+      <img src="../IMG/PRENDAS/COLECCIONPC.jpg" alt="Descripción">
+    </picture>
+  </main>
+
+
+
+  <section id="hombre">
+    <div class="intro-hombre">
+      <h1>COLECCIÓN HOMBRE</h1>
+      <p>Prendas diseñadas para moverte con libertad en cada ascenso. Resistencia, comodidad y estilo pensados para
+        acompañarte dentro y fuera de la roca.</p>
+    </div>
+
+
+
+    <div class="container">
+
+
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Chaqueta-H.jpg" alt="">
+        <div class="content">
+          <div class="title">CHAQUETA KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b> Pluma o fibra sintética que protege incluso con viento o llovizna ligera.
+          </div>
+          <div class="footer">
+            <div class="price">39,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Pantalones-H.jpg" alt="">
+        <div class="content">
+          <div class="title">PANTALONES KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b> Su tejido transpirable y su corte ergonómico te dan la confianza necesaria
+            en cada movimiento técnico.</div>
+          <div class="footer">
+            <div class="price">29,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Gorro-H.jpg" alt="">
+        <div class="content">
+          <div class="title">GORRO KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b> Transpirable y de secado rápido para gestionar el sudor.</div>
+          <div class="footer">
+            <div class="price">15,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Calzado-H.jpg" alt="">
+        <div class="content">
+          <div class="title">CALZADO KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b> Pie de gato diseñado para maximizar la precisión y el agarre sobre la roca.
+          </div>
+          <div class="footer">
+            <div class="price">65,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Ascendist-Chaqueta-H.png" alt="">
+        <div class="content">
+          <div class="title">CHAQUETA ASCENDIST</div>
+          <div class="desc">Ultraligera y comprimible diseñada con tejido técnico transpirable que bloquea el viento.
+          </div>
+          <div class="footer">
+            <div class="price">29,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Ascendist-Pantalones-H.jpg" alt="">
+        <div class="content">
+          <div class="title">PANTALONES ASCENDIST</div>
+          <div class="desc"> Permite total libertad de movimiento y compatibilidad con el uso del arnés.</div>
+          <div class="footer">
+            <div class="price">39,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Calzado-Alpinex-H.jpg" alt="">
+        <div class="content">
+          <div class="title">CALZADO ALPINEX</div>
+          <div class="desc">Pies de gato cómodos y precisos, ideales para un buen agarre en roca.</div>
+          <div class="footer">
+            <div class="price">39,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Calzado-Grip-H.jpg" alt="">
+        <div class="content">
+          <div class="title">CALZADO GRIP</div>
+          <div class="desc">Ideales para roca y rocódromo, con gran control en apoyos pequeños.</div>
+          <div class="footer">
+            <div class="price">39,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+
+
+
+
+  <section id="mujer">
+    <div class="intro-mujer">
+      <h1>COLECCIÓN MUJER</h1>
+      <p>Ligereza, ajuste y carácter en cada detalle. Ropa que se adapta a tu forma de escalar y a tu ritmo, sin
+        renunciar a diseño ni funcionalidad.</p>
+    </div>
+
+    <div class="container">
+
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Chaqueta-M.jpg" alt="">
+        <div class="content">
+          <div class="title">CHAQUETA KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b>Chaqueta resistente y cómoda, ideal para aventuras al aire libre y
+            condiciones exigentes.</div>
+          <div class="footer">
+            <div class="price">39,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Pantalones-M.jpg" alt="">
+        <div class="content">
+          <div class="title">PANTALONES KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b>Pantalones flexibles y resistentes que ofrecen máxima libertad de movimiento
+            en cualquier entorno.</div>
+          <div class="footer">
+            <div class="price">29,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Gorro-H.jpg" alt="">
+        <div class="content">
+          <div class="title">GORRO KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b>Gorro cómodo y ligero, perfecto para rutas y actividades outdoor en cualquier
+            clima.</div>
+          <div class="footer">
+            <div class="price">15,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Calzado-M.jpg" alt="">
+        <div class="content">
+          <div class="title">CALZADO KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b>Calzado técnico con gran agarre y estabilidad para terrenos exigentes y
+            variados.</div>
+          <div class="footer">
+            <div class="price">65,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kalox-Chaqueta-M.jpg" alt="">
+        <div class="content">
+          <div class="title">CHAQUETA KALOX</div>
+          <div class="desc">Diseño resistente y funcional pensado para acompañarte en cualquier reto al aire libre.
+          </div>
+          <div class="footer">
+            <div class="price">54,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Julius-Calzado-M.jpg" alt="">
+        <div class="content">
+          <div class="title">CALZADO JULIUS</div>
+          <div class="desc">Comodidad, estabilidad y buen agarre para moverte con seguridad en todo tipo de terrenos.
+          </div>
+          <div class="footer">
+            <div class="price">39,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Julius-Chaqueta-M.jpg" alt="">
+        <div class="content">
+          <div class="title">CHAQUETA JULIUS</div>
+          <div class="desc">Ajuste flexible y resistente que garantiza comodidad total en movimiento continuo.
+          </div>
+          <div class="footer">
+            <div class="price">25,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Ascendist-Chaqueta-M.jpg" alt="">
+        <div class="content">
+          <div class="title">CHAQUETA ASCENDIST</div>
+          <div class="desc">Chaqueta ligera y resistente, diseñada para explorar con libertad y confianza.</div>
+          <div class="footer">
+            <div class="price">29,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kids">
+    <div class="intro-kids">
+      <h1>COLECCIÓN KIDS</h1>
+      <p>Para los pequeños grandes escaladores. Comodidad, durabilidad y libertad de movimiento en cada aventura desde
+        el primer agarre.</p>
+    </div>
+    <div class="container">
+
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Chaqueta-K.jpg" alt="">
+        <div class="content">
+          <div class="title">CHAQUETA KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b>Chaqueta cómoda y resistente para pequeños aventureros en cualquier actividad
+            outdoor</div>
+          <div class="footer">
+            <div class="price">35,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Pantalones-K.jpg" alt="">
+        <div class="content">
+          <div class="title">PANTALONES KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b> Pantalones flexibles y ligeros para moverse con total comodidad y libertad.
+          </div>
+          <div class="footer">
+            <div class="price">27,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Gorro-K.jpg" alt="">
+        <div class="content">
+          <div class="title">GORRO KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b> Gorro cálido y cómodo ideal para rutas y días al aire libre.</div>
+          <div class="footer">
+            <div class="price">14,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Kepler-Calzado-Kids.jpg" alt="">
+        <div class="content">
+          <div class="title">CALZADO KEPLER</div>
+          <div class="desc"><b>NOVEDAD.</b>   Calzado resistente y estable para acompañar cada nueva aventura.
+          </div>
+          <div class="footer">
+            <div class="price">29,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Juniors-Camiseta.jpg" alt="">
+        <div class="content">
+          <div class="title">CAMISETA JUNIOR'S</div>
+          <div class="desc">Camiseta ligera y cómoda diseñada para el ritmo diario de los más pequeños.</div>
+          <div class="footer">
+            <div class="price">25,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/CalzadoJunior.jpg" alt="">
+        <div class="content">
+          <div class="title">CALZADO JUNIOR'S</div>
+          <div class="desc">Calzado deportivo con gran comodidad y agarre para cualquier actividad.</div>
+          <div class="footer">
+            <div class="price">55,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/Juniors-Pantalones.jpg" alt="">
+        <div class="content">
+          <div class="title">PANTALONES JUNIOR'S</div>
+          <div class="desc">Pantalones resistentes y cómodos para jugar, explorar y moverse sin límites.</div>
+          <div class="footer">
+            <div class="price">45,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../IMG/PRENDAS/StationZero.jpg" alt="">
+        <div class="content">
+          <div class="title">CALZADO STATION ZERO</div>
+          <div class="desc">Calzado moderno y resistente pensado para aventuras y uso diario.</div>
+          <div class="footer">
+            <div class="price">49,99€</div>
+            <a href="#" class="btn">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="pie">
+    <div class="pie-content">
+
+      <h2 class="pie-title">BUNTARO</h2>
+
+      <a href="tel:+34600000000" class="pie-pc">
+        +34 600 000 000<br>
+        Calle Azucena 23, 03001 (Alicante)
+      </a>
+
+      <nav class="pie-links">
+        <a href="../index.html">VOLVER</a>
+        <a href="#/HTML/prendas.html">PRENDAS</a>
+        <a href="/HTML/equipamiento.html">EQUIPAMIENTO</a>
+        <a href="/HTML/expedicion.html">EXCURSIONES</a>
+        <a href="/HTML/entrenar.html">ENTRENA</a>
+        <a href="/HTML/nosotros.html">NOSOTROS</a>
+        <a href="/HTML/aviso.html">AVISO LEGAL Y POLÍTICA DE PRIVACIDAD</a>
+      </nav>
+
+      <p class="pie-copy">© 2026 BUNTARO. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+
+
+  <script src="../JS/prendas.js"></script>
 </body>
-
-
-
 
 </html>

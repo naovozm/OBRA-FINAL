@@ -1,0 +1,434 @@
+  @font-face {
+    font-family: "Futura100Bold";
+    src: url(../TIPO/Futura100-Bold.otf);
+  }
+
+  @font-face {
+    font-family: "NF";
+    src: url(../TIPO/NeutralFace.otf);
+  }
+
+  @font-face {
+    font-family: "Futura100BoldOB";
+    src: url(../TIPO/Futura100-BoldOblique.otf);
+  }
+
+  @font-face {
+    font-family: "Futura100Book";
+    src: url(../TIPO/Futura100-Book.otf);
+  }
+
+  @font-face {
+    font-family: "Futura100REG";
+    src: url(../TIPO/Futura100-Regular.otf);
+  }
+
+  @font-face {
+    font-family: "NFB";
+    src: url(../TIPO/NeutralFaceBold.otf);
+  }
+
+  body {
+    font-family: "Futura100REG";
+    background: #eee;
+    margin: 0;
+
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    z-index: 9999; /* asegurandome de que el navbar está al frente del todo  */
+    transition: transform 0.3s ease;
+  }
+
+  .navbar a {
+    color: #162d6b;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  #toggle {
+    display: none;
+
+  }
+
+  .logo {
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    cursor: pointer;
+    z-index: 10000;/* al frente del todo , más que el navbar */
+    height: 10px;
+    width: 10px;
+    color: white;
+    padding: 5px 10px;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  #toggle:checked~.navbar {
+    transform: translateY(-100%);
+  }
+
+  * {
+    box-sizing: border-box; 
+    /* el asterisco selecciona todo lo del html. border box para que las medidas sean más precisas y no ocurran desbordamientos, conserva el tamaño exterior y todo se ajusta hacia adentro */
+  }
+
+  .plan-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%; 
+    /* primer valor arriba y abajo , segundo izq y derecha */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transform: translateY(80px);
+    transition:
+      opacity 1s ease,
+      transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+/* transición como la de prendas/equipamiento pero hacia arriba */
+
+  .plan-section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .bg1 {
+    background-image: url("../IMG/SoloPlan.jpg");
+  }
+
+  .bg2 {
+    background-image: url("../IMG/Grupos.jpg");
+  }
+
+  .bg3 {
+    background-image: url("../IMG/Familia.jpg");
+  }
+
+  /* funcionamiento de la sección: flex, hace "zigzag", para eso,  uno es flex start y el siguiente es flex end.*/
+  .plan-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .plan-section.left {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .plan-section.right {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .section-title {
+    font-size: 50px;
+    color: white;
+    font-family: "NFB";
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .plan-card {
+    width: 100%;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .exc-contenido {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .detalles {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .detalles li {
+    margin-bottom: 8px;
+  }
+
+  .exc-contenido button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background: #092b7f;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Futura100Book";
+  }
+
+  .exc-contenido button:hover {
+    background: #7575d0;
+  }
+
+  #logotipo img {
+    width: 50%;
+  }
+
+  #logotipo {
+    position: fixed;
+    top: 10px;
+    left: 105px;
+    cursor: pointer;
+    z-index: 10000;
+    height: 50px;
+    width: 68px;
+    color: white;
+    padding: 5px 10px;
+
+  }
+
+  .pie {
+    padding: 32px;
+    text-align: left;
+    background: linear-gradient(180deg, #092b7f, #092b7f);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    font-family: "Futura100REG";
+    padding-left: 70px;
+  }
+
+  .pie-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+  }
+
+  .pie-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  .pie-pc {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-family: "NF";
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .pie-pc::after {
+    content: ""; 
+    /* despúes se muestra la flecha */
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #7575d0;
+    transition: width 0.3s ease;
+  }
+
+  .pie-pc:active {
+    transform: scale(0.96);
+  }
+
+  .pie-pc:hover::after {
+    width: 100%;
+  }
+
+  .pie-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pie-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .pie-links a::before {
+    content: "→";
+    position: absolute;
+    left: -18px;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+
+  .pie-links a:hover {
+    color: #7575d0;
+    transform: translateX(6px);
+  }
+
+  .pie-links a:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .pie-copy {
+    font-size: 12px;
+    opacity: 0.5;
+    margin-top: 10px;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .navbar a {
+      font-size: 14px;
+    }
+
+    .logo {
+      left: 20px;
+    }
+
+    .logo img {
+      width: 40px;
+    }
+
+    #logotipo {
+      left: 20px;
+      top: 50px;
+      width: 60px;
+      height: auto;
+    }
+
+    #logotipo img {
+      width: 100%;
+    }
+
+    .plan-section {
+      min-height: 100vh;
+      height: auto;
+      padding: 120px 20px 60px;
+      align-items: center;
+    }
+
+    .bg1 {
+      background-image: url("../IMG/SoloPlanTLF.jpg");
+    }
+
+    .bg2 {
+      background-image: url("../IMG/GruposPC.jpg");
+    }
+
+    .bg3 {
+      background-image: url("../IMG/FamiliaTLF.jpg");
+    }
+
+    .plan-section.left {
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    .plan-section.right {
+      justify-content: flex-end;
+      text-align: right;
+    }
+
+    .plan-wrapper {
+      width: 100%;
+      max-width: 100%;
+      gap: 16px;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      line-height: 1.1;
+      max-width: 300px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .plan-card {
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+      border-radius: 24px;
+    }
+
+    .exc-contenido {
+      padding: 30px 24px;
+      gap: 18px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+    }
+
+    .detalles {
+      padding-left: 18px;
+    }
+
+    .detalles li {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .exc-contenido button {
+      padding: 14px;
+      font-size: 14px;
+    }
+    .pie {
+    padding: 20px;
+  }
+
+  .pie-pc {
+    font-size: 18px;
+  }
+
+  .pie-links a {
+    font-size: 14px;
+  }
+
+  }
