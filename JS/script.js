@@ -45,9 +45,9 @@ const source = document.getElementById("videoSource");
 function cambiarVideo() {
 
   if (window.innerWidth <= 768) {
-    source.src = "/IMG/IntrofondoTLF.mp4";
+    source.src = "IMG/intro-fondo-tlf.mp4";
   } else {
-    source.src = "/IMG/IntroFondoINDEX.mp4";
+    source.src = "IMG/intro-bg-index.mp4";
   }
 
   video.load();

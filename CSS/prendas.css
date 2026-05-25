@@ -539,7 +539,7 @@ main img {
 }
 
 @media (max-width: 450px) {
-  .card {}
+ 
 
   .btn {
     width: 120px;
